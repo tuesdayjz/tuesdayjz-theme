@@ -1,4 +1,13 @@
-/* @theme tuesdayjz */
+@charset "UTF-8";
+/*!
+ * Marp TuesdayJZ theme.
+ * @theme tuesdayjz
+ * @author TuesdayJZ
+ *
+ * @auto-scaling true
+ * @size 4:3 960px 720px
+ * @size 16:9 1280px 720px
+ */
 
   @import 'default';
 
