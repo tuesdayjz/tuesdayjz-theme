@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*!
  * Marp TuesdayJZ theme.
  * @theme tuesdayjz
@@ -23,14 +24,15 @@ section {
 }
 
 section::after {
-  font-size: 26px;
+  font-size: 30px;
   color: #555;
+  bottom: 10px;
 }
 
 header {
   color: #666;
   font-size: 16pt;
-  display:
+  top: 10px;
 }
 
 footer {
@@ -38,6 +40,7 @@ footer {
   font-size: 16pt;
   font-family: "Noto Sans JP", sans-serif;
   left: 30px;
+  bottom: 10px;
 }
 
 h1 {
@@ -93,4 +96,8 @@ table {
 
 table::-webkit-scrollbar {
   display: none;
+}
+
+rt {
+  font-size: 12pt;
 }
