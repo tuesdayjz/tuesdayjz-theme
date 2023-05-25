@@ -21,7 +21,7 @@
   --lightgray: #aaa;
   --green: #104848;
   --lightgreen: #50a898;
-  --llightgreen: #a0c8b8;
+  --llgreen: #d0e8d8;
   --blue: #5b97be;
   --red: #ee8888;
   --mini-font-size: 20px;
@@ -145,7 +145,7 @@ section.normal h3 {
   text-align: center;
   color: var(--gray);
   padding: 0.5em;
-  mergin: 0.5em;
+  margin: 0.5em;
 }
 
 .box1 {
@@ -157,10 +157,11 @@ section.normal h3 {
 }
 
 .box2 {
-  margin: 0em;
+  margin: 0.5em auto;
   padding: 0.3em;
-  border-radius: 30px 60px/60px 30px;
-  border: solid 8px var(--llightgreen);
+  width: 90%;
+  background-color: #efefef;
+  box-shadow: 0 0 5px 1px #aaaaaa;
 }
 
 table {
