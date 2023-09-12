@@ -15,17 +15,19 @@
 
 :root {
   font-family: "Noto Sans JP", sans-serif;
-  background-color: #efefef;
+  --background: #f0f4f8;
+  --link: #1c948e;
   --white: #fff;
   --gray: #333;
   --lightgray: #aaa;
-  --green: #104848;
-  --lightgreen: #50a898;
-  --llightgreen: #c6e799;
-  --blue: #134668;
-  --red: #863636;
+  --blue: #134d68;
+  --lightblue: #1a7894;
+  --llightblue: #97bbc9;
+  --yellow: #ece58b;
+  --pink: #bd909b;
   --mini-font-size: 18px;
   --header-footer-height: 40px;
+  background-color: var(--background);
 }
 
 section {
@@ -44,6 +46,7 @@ section.title {
   align-items: center;
   text-align: center;
   color: var(--gray);
+  background-image: linear-gradient(150deg, var(--llightblue), var(--lightgray), var(--pink));
 }
 
 section.index {
@@ -67,8 +70,8 @@ section::after {
 
 section.title::after {
   font-size: 30px;
-  color: var(--white);
   bottom: 10px;
+  color: var(--white);
 }
 
 header {
@@ -89,20 +92,23 @@ footer {
 }
 
 section.title h1 {
-  font-size: 2.5em;
-  color: var(--green);
+  font-size: 1.8em;
+  color: var(--blue);
+  background: var(--white);
   text-align: center;
 }
 
 section.title h2 {
-  font-size: 1.7em;
+  font-size: 1.2em;
+  padding: 0.5;
+  margin: 0;
   text-align: center;
-  color: var(--gray);
+  color: var(--white);
 }
 
 section.index h1 {
   font-size: 2.0em;
-  color: var(--green);
+  color: var(--blue);
   text-align: center;
   background: var(--white);
   padding: 0.2em 0.8em;
@@ -119,22 +125,21 @@ section.normal h1:after {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 7px;
+  height: 10px;
   content: '';
-  background-image: linear-gradient(to right, var(--blue) 0%, var(--green) 10%, var(--lightgreen) 50%, var(--llightgreen) 90%, #efefef 100%);
+  background-image: linear-gradient(to right, var(--blue) 0%, var(--lightblue) 30%, var(--llightblue) 60%, var(--background) 100%);
 }
 
 section.normal h2 {
   padding: 0 0 0.3rem 0;
   color: var(--gray);
   margin: 0.3rem 0 0.5rem 0;
-  background: linear-gradient(transparent 70%, var(--llightgreen) 70%);
+  background: linear-gradient(transparent 65%, var(--llightblue) 20%);
   display: inline-block;
 }
 
 section.normal h3 {
-  text-align: center;
-  color: var(--gray);
+  color: var(--blue);
   padding: 0.1em;
   margin: 0.2em;
 }
@@ -175,21 +180,21 @@ img[alt~="center"] {
 }
 
 li::marker {
-  color: var(--green);
+  color: var(--lightblue);
   font-size: 30px
 }
 
-.bulb ul{
+.bulb ul {
   list-style-type: "\1F4A1";
 }
 
 blockquote {
   font-size: var(--mini-font-size);
   position: absolute;
-  top: var(--header-footer-height);
+  top: 20px;
   right: 30px;
   padding-left: 20px;
-  color: var(--green);
+  color: var(--blue);
 }
 
 blockquote::before {
@@ -221,12 +226,18 @@ blockquote::after {
   margin-left: 20px;
 }
 
-code {
-  font-size: var(--mini-font-size);
-  display: inline-block;
-  padding: 0.1em 0.25em;
+section.normal pre {
+  padding: 0.5em;
   color: var(--black);
   background-color: var(--white);
   border-radius: 3px;
-  border: solid 1px var(--lightgray);
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+}
+
+.marker {
+  background: linear-gradient(transparent 65%, var(--yellow) 20%);
 }
