@@ -1,6 +1,6 @@
 # tuesdayjz-theme
 
-here is my own themes for [Marp](https://marp.app/).
+This is my own theme for [Marp](https://marp.app/).
 
 ### How to use
 
