@@ -7,4 +7,4 @@ This is my own theme for [Marp](https://marp.app/).
 - install marp-cli/marp
 - `git clone` this repository to your local machine.
 - `cd` to the repository folder.
-- create marp file, and write `theme: tuesdayjz-theme` in the preamble.
+- create marp file, and write `theme: tuesdayjz` in the preamble.
